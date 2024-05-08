@@ -9,6 +9,7 @@ import Contacts from './Pages/Contacts';
 import Experiences from './Pages/Experiences'
 import Achievements from './Pages/Achievements';
 import Projects from './Pages/Projects';
+import CV from './Pages/CV';
 
 import NotFound from './ErrorPage/NotFound';
 
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/Achievements" element={<Achievements />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Contacts" element={<Contacts />} />
+        <Route path="/CV" element={<CV />} /> 
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 interface NavbarTexts {
     brand: string;
-    choices: { label: string; link: string; active: boolean }[];
+    choices: { label: string; link: string; active: boolean, openInNewTab: boolean }[];
 }
 
 const Navbar: React.FC<NavbarTexts> = ({brand, choices}) =>
@@ -15,6 +15,8 @@ const Navbar: React.FC<NavbarTexts> = ({brand, choices}) =>
                 <>
                     { choice.active ? (
                         <Link to={choice.link} id='active-choice' className='choice' key={choice.label}>{choice.label}</Link>
+                    ) : choice.openInNewTab ? (
+                        <Link to={choice.link} className='choice' key={choice.label} target="_blank" rel="noopener noreferrer">{choice.label}</Link>
                     ) : (
                         <Link to={choice.link} className='choice' key={choice.label}>{choice.label}</Link>
                     )}

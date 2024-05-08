@@ -13,12 +13,13 @@ const About: React.FC = () =>
                 <Navbar
                     brand='Stanley'
                     choices={[
-                        { label: 'Home', link:'/Home', active: false }, 
-                        { label: 'About', link:'/About', active: true },
-                        { label: 'Experiences', link:'/Experiences', active: false },
-                        { label: 'Achievements', link:'/Achievements', active: false },
-                        { label: 'Projects', link:'/Projects', active: false },
-                        { label: 'Contact Me', link:'/Contacts', active: false },
+                        { label: 'Home', link:'/Home', active: false, openInNewTab: false, }, 
+                        { label: 'About', link:'/About', active: true, openInNewTab: false, },
+                        { label: 'Experiences', link:'/Experiences', active: false, openInNewTab: false, },
+                        { label: 'Achievements', link:'/Achievements', active: false, openInNewTab: false, },
+                        { label: 'Projects', link:'/Projects', active: false, openInNewTab: false, },
+                        { label: 'Contact Me', link:'/Contacts', active: false, openInNewTab: false, },
+                        { label: 'CV', link: '/CV', active: false, openInNewTab: true, },
                     ]}
                 />
             </>
