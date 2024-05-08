@@ -1,0 +1,28 @@
+.line-container {
+    width: 80%;
+    height: .1rem;
+
+    margin-left: 3%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.line-container div {
+    border-radius: 15%;
+    height: 100%;
+}
+
+.short-line {
+    width: 5%;
+}
+
+.medium-line {
+    width: 20%;
+}
+
+.long-line {
+    width: 70%;
+}
+
