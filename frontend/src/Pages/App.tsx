@@ -40,18 +40,32 @@ function App() {
       </div>
 
       <div className='full-page' id='skills'>
-        <ImageWithText src="/images/svg/python-logo-only.svg" alt='python' backgroundColor='#27282d' title='Python'>
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='C' backgroundColor='#27282d' title='C'>
+          Understands most C programming, syntaxes, and data structures, for example Tree, Trie, Linked List, and more.
+        </ImageWithText>
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='C++' backgroundColor='#27282d' title='C++'>
+          Understands most C++ programming, syantaxes, and project organizations with class abstraction in header and cpp file.
+        </ImageWithText>
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='Python' backgroundColor='#27282d' title='Python'>
           Understands basic syntax of Python alongside the usage of some popular modules, like Numpy, Pandas, Scikit, and more.
         </ImageWithText>
-      </div>
-      <div className='full-page' id='skills'>
-        <ImageWithText src="/images/svg/python-logo-only.svg" alt='python' backgroundColor='#27282d' title='Python'>
-          Understands basic syntax of Python alongside the usage of some popular modules, like Numpy, Pandas, Scikit, and more.
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='HTML' backgroundColor='#27282d' title='HTML'>
+          Understands the hierachy (parents-children) concepts and most tags in HTML.
         </ImageWithText>
-      </div>
-      <div className='full-page' id='skills'>
-        <ImageWithText src="/images/svg/python-logo-only.svg" alt='python' backgroundColor='#27282d' title='Python'>
-          Understands basic syntax of Python alongside the usage of some popular modules, like Numpy, Pandas, Scikit, and more.
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='CSS' backgroundColor='#27282d' title='CSS'>
+          Understands basic-intermediate CSS properties, specifities, and other concepts.
+        </ImageWithText>
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='Javascript' backgroundColor='#27282d' title='Javascript'>
+          Familiar with Javascript usage for simple website interactions and React components (in .jsx).
+        </ImageWithText>
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='Typescript' backgroundColor='#27282d' title='Typescript'>
+          Familiar with Typescript usage in React components (in .tsx) and the static typing.
+        </ImageWithText>
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='React' backgroundColor='#27282d' title='React'>
+          Understands how to create React components and creating frontend UI with React in a website.
+        </ImageWithText>
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='Bootstrap' backgroundColor='#27282d' title='Bootstrap'>
+          Understands what Bootstrap is, its usages, and some of its components and classes.
         </ImageWithText>
       </div>
     </>
