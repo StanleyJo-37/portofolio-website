@@ -1,4 +1,5 @@
 import './ImageWithText.css'
+import 'animate.css'
 import React from 'react'
 
 interface ImageWithTextProps {
