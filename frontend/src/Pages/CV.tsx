@@ -7,11 +7,8 @@ const CV: React.FC = () =>
         <>
             <iframe 
                 title='CV Stanley Jonathan Wahjudi-Mei-2024'
+                id='cv'
                 src="/pdf/CV Stanley Jonathan Wahjudi-Mei-2024.pdf"
-                style={{
-                    width: "100vw",
-                    height: "100vh",
-                }}
             ></iframe>
         </>
     );

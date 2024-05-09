@@ -1,4 +1,5 @@
 import './App.css'
+import './Page.css'
 import Navbar from '../Util/Navbar'
 import Button from '../Util/Button'
 // import LineDecoration from './Decorations/LineDecoration'
@@ -19,9 +20,9 @@ function App() {
             { label: 'CV', link: '/CV', active: false, openInNewTab: true, },
         ]}
       />
-      <div id="main-content">
-        <img src="/images/png/main-photo.png" alt="My Photo" id='my-photo' />
-        <div id="right">
+      <div id='intro-content' className='first-section'>
+        <img src='/images/png/main-photo.png' alt='My Photo' id='my-photo' />
+        <div id='right'>
           <h1 id='intro-title' className='intro-text'>Hi, my name is Stanley</h1>
           <br />
             <p id='brief-intro' className='intro-text'>
@@ -33,6 +34,10 @@ function App() {
           <br />
           <Button link='/Contacts' id='intro' color='bg-dark' label='Contact Me!' buttonType='button' />
         </div>
+      </div>
+
+      <div className='full-page'>
+
       </div>
     </>
   )

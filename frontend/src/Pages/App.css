@@ -1,6 +1,6 @@
-#main-content {
-  height: 90%;
-  width: 100%;
+#intro-content {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 #my-photo {
