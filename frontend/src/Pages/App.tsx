@@ -39,7 +39,7 @@ function App() {
         </div>
       </div>
 
-      <div className='full-page' id='skills'>
+      <div className='one-half' id='skills'>
         <ImageWithText src="/images/svg/python-logo-only.svg" alt='C' backgroundColor='#27282d' title='C'>
           Understands most C programming, syntaxes, and data structures, for example Tree, Trie, Linked List, and more.
         </ImageWithText>
