@@ -20,23 +20,25 @@ function App() {
             { label: 'CV', link: '/CV', active: false, openInNewTab: true, },
         ]}
       />
-      <div id='intro-content' className='first-section'>
-        <img src='/images/png/main-photo.png' alt='My Photo' id='my-photo' />
+      <div className='first-section' id='intro-content'>
+        <div id="left">
+          <img src='/images/png/main-photo.png' alt='My Photo' id='my-photo' />
+        </div>
         <div id='right'>
-          <h1 id='intro-title' className='intro-text'>Hi, my name is Stanley</h1>
+          <h1 className='intro-text' id='intro-title' >Hi, my name is Stanley</h1>
           <br />
-            <p id='brief-intro' className='intro-text'>
-            I'm a 19 year-old student who is eager to contribute through
-            projects and learn new things about programming and computer
-            in general with the tendency to give my best effort for the
-            responsibilities given to me. <Link to='/About'>Learn more.</Link>
+            <p className='intro-text' id='brief-intro'>
+              I'm a 19 year-old student who is eager to contribute through
+              projects and learn new things about programming and computer
+              in general with the tendency to give my best effort for the
+              responsibilities given to me. <Link to='/About'>Learn more.</Link>
             </p> 
           <br />
           <Button link='/Contacts' id='intro' color='bg-dark' label='Contact Me!' buttonType='button' />
         </div>
       </div>
 
-      <div className='full-page'>
+      <div className='full-page' id='skills'>
 
       </div>
     </>

@@ -5,18 +5,25 @@
 
 #my-photo {
   height: 100%;
-  width: 40%;
+}
+
+#left {
+  height: 100%;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #right {
   height: 100%;
-  width: 60%;
+  width: 50%;
 
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding-left: 5rem;
 }
 
 .intro-text {
