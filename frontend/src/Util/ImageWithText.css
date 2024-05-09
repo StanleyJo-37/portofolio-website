@@ -1,20 +1,25 @@
 .image-with-text {
     height: auto;
-    width: 100%;
+    width: 60%;
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-content: center;
 
     padding: 1.5rem;
 }
 
-#image-prop {
+.image-prop {
     height: 80%;
 }
 
-#comp-text-content {
+.comp-text-content {
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
+}
+
+.text-content {
+    text-decoration: none;
 }

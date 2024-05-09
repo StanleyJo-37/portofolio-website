@@ -1,5 +1,5 @@
 import './ImageWithText.css'
-import "animate.css/animate.compat.css"
+import "animate.css/animate.css"
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -15,7 +15,7 @@ interface ImageWithTextProps {
 const ImageWithText: React.FC<ImageWithTextProps> = ({src, alt, link, backgroundColor, title, children}) =>
 {
     return (
-        <ScrollAnimation className='image-with-text' animateIn='fade-up'>
+        <ScrollAnimation className='image-with-text' animateIn='fadeIn' animateOnce={true}>
             <img
                 src={src}
                 alt={alt}
@@ -23,10 +23,10 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({src, alt, link, background
                 style={{
                     backgroundColor: backgroundColor
                 }} />
-            <div id="comp-text-content">
+            <div className="comp-text-content">
                 <h1>{title}</h1>
-                <a href={link}>
-                    <p className='text-content'>
+                <a href={link}className='text-content'>
+                    <p>
                         {children}
                     </p>
                 </a>

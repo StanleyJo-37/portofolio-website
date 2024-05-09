@@ -44,6 +44,16 @@ function App() {
           Understands basic syntax of Python alongside the usage of some popular modules, like Numpy, Pandas, Scikit, and more.
         </ImageWithText>
       </div>
+      <div className='full-page' id='skills'>
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='python' backgroundColor='#27282d' title='Python'>
+          Understands basic syntax of Python alongside the usage of some popular modules, like Numpy, Pandas, Scikit, and more.
+        </ImageWithText>
+      </div>
+      <div className='full-page' id='skills'>
+        <ImageWithText src="/images/svg/python-logo-only.svg" alt='python' backgroundColor='#27282d' title='Python'>
+          Understands basic syntax of Python alongside the usage of some popular modules, like Numpy, Pandas, Scikit, and more.
+        </ImageWithText>
+      </div>
     </>
   )
 }
