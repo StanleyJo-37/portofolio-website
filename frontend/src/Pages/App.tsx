@@ -1,5 +1,5 @@
 import './App.css'
-import Navbar from '../Navbar/Navbar'
+import Navbar from '../Util/Navbar'
 import Button from '../Util/Button'
 // import LineDecoration from './Decorations/LineDecoration'
 import { Link } from 'react-router-dom'

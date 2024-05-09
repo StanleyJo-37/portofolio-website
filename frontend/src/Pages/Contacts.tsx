@@ -1,7 +1,7 @@
 import './Contacts.css'
 // import { Link } from 'react-router-dom';
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../Util/Navbar';
 
 const Contacts: React.FC = () =>
 {
