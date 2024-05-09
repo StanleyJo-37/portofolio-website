@@ -3,6 +3,16 @@
     height: 100%;
 }
 
+.one-half {
+    width: 100%;
+    height: 150%;
+}
+
+.two-pages {
+    width: 100%;
+    height: 200%;
+}
+
 .first-section {
     width: 100%;
     height: 90%;
