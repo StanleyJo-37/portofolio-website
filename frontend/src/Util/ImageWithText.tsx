@@ -15,21 +15,23 @@ interface ImageWithTextProps {
 const ImageWithText: React.FC<ImageWithTextProps> = ({src, alt, link, backgroundColor, title, children}) =>
 {
     return (
-        <ScrollAnimation className='image-with-text' animateIn='fadeIn' animateOnce={true}>
-            <img
-                src={src}
-                alt={alt}
-                className='image-prop'
-                style={{
-                    backgroundColor: backgroundColor
-                }} />
-            <div className="comp-text-content">
-                <h1>{title}</h1>
-                <a href={link}className='text-content'>
-                    <p>
-                        {children}
-                    </p>
-                </a>
+        <ScrollAnimation className='image-with-text' animateIn='fadeInUp' animateOnce={true} offset={0} animatePreScroll={false}>
+            <div className="ImageWithText">
+                <img
+                    src={src}
+                    alt={alt}
+                    className='image-prop'
+                    style={{
+                        backgroundColor: backgroundColor
+                    }} />
+                <div className="comp-text-content">
+                    <h1>{title}</h1>
+                    <a href={link}className='text-content'>
+                        <p>
+                            {children}
+                        </p>
+                    </a>
+                </div>
             </div>
         </ScrollAnimation>
     )
