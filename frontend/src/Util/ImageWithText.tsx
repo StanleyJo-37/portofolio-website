@@ -5,11 +5,12 @@ import React from 'react'
 interface ImageWithTextProps {
     src: string;
     alt?: string;
+    link?:string
     backgroundColor: string;
     children: React.ReactNode;
 }
 
-const ImageWithText: React.FC<ImageWithTextProps> = ({src, alt, backgroundColor, children}) =>
+const ImageWithText: React.FC<ImageWithTextProps> = ({src, alt, link, backgroundColor, children}) =>
 {
     return (
         <div className='image-with-text'>
@@ -20,9 +21,11 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({src, alt, backgroundColor,
                 style={{
                     backgroundColor: backgroundColor
                 }} />
-            <p className='text-content'>
-                {children}
-            </p>
+            <a href={link}>
+                <p className='text-content'>
+                    {children}
+                </p>
+            </a>
         </div>
     )
 }
