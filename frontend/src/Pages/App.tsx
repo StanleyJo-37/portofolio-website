@@ -33,7 +33,7 @@ function App() {
               projects and learn new things about programming and computer
               in general with the tendency to give my best effort for the
               responsibilities given to me. <Link to='/About'>Learn more.</Link>
-            </p> 
+            </p>  
           <br />
           <Button link='/Contacts' id='intro' color='bg-dark' label='Contact Me!' buttonType='button' />
         </div>

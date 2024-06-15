@@ -6,9 +6,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 interface ImageWithTextProps {
     src: string;
     alt?: string;
-    link?:string
+    link?:string;
     backgroundColor: string;
-    title: string
+    title: string;
     children: React.ReactNode;
 }
 
@@ -26,7 +26,7 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({src, alt, link, background
                     }} />
                 <div className="comp-text-content">
                     <h1>{title}</h1>
-                    <a href={link}className='text-content'>
+                    <a href={link} className='text-content'>
                         <p>
                             {children}
                         </p>
