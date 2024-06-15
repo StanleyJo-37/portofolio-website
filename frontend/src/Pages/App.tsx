@@ -32,7 +32,7 @@ function App() {
               responsibilities given to me. <Link to='/About'>Learn more.</Link>
             </p>  
           <br />
-          <Button link='/Contacts' id='intro' color='bg-dark' label='Contact Me!' buttonType='button' />
+          <Button link='/Contacts' id='intro' label='Contact Me!' buttonType='button' />
         </div>
       </div>
 
