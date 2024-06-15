@@ -12,6 +12,8 @@ export default {
       "green": "#74c79d",
       "darker-green": "#4b8066",
       "white": "#fff",
+      "transparent": "rgba(0,0,0,0)",
+      "black": "#000",
     },
     extend: {},
   },
