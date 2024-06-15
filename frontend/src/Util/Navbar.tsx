@@ -35,10 +35,6 @@ const Navbar: React.FC<NavbarTexts> = ({brand, choices}) =>
                     { choice_list }
                 </div>
             </nav>
-
-            <div id='content'>
-                
-            </div>
         </>
     );
 }
