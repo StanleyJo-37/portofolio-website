@@ -1,4 +1,4 @@
-import './Navbar.css'
+// import './Navbar.css'
 import React from 'react'
 import { Link } from 'react-router-dom';
 
@@ -14,11 +14,11 @@ const Navbar: React.FC<NavbarTexts> = ({brand, choices}) =>
             return (
                 <>
                     { choice.active ? (
-                        <Link to={choice.link} id='active-choice' className='choice' key={choice.label}>{choice.label}</Link>
+                        <Link className='no-underline text-green' to={choice.link} key={choice.label}>{choice.label}</Link>
                     ) : choice.openInNewTab ? (
-                        <Link to={choice.link} className='choice' key={choice.label} target="_blank" rel="noopener noreferrer">{choice.label}</Link>
+                        <Link className='no-underline text-secondary' to={choice.link} key={choice.label} target="_blank" rel="noopener noreferrer">{choice.label}</Link>
                     ) : (
-                        <Link to={choice.link} className='choice' key={choice.label}>{choice.label}</Link>
+                        <Link className='no-underline text-secondary' to={choice.link} key={choice.label}>{choice.label}</Link>
                     )}
                 </>
             );
@@ -27,12 +27,12 @@ const Navbar: React.FC<NavbarTexts> = ({brand, choices}) =>
 
     return (
         <>
-            <nav id='navbar'>
-                <div id="navbar-brand">
-                    {brand}
+            <nav className='flex flex-row justify-between items-center w-full h-auto px-8 py-4'>
+                <div className='text-secondary'>
+                    { brand }
                 </div>
-                <div id='navbar-choices'>
-                    {choice_list}
+                <div className='space-x-6 text-xs'>
+                    { choice_list }
                 </div>
             </nav>
 
