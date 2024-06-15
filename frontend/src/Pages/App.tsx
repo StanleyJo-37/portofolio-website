@@ -1,7 +1,7 @@
 import './Page.css'
 import Navbar from '../Util/Navbar'
 import Button from '../Util/Button'
-import ImageWithText from '../Util/ImageWithText'
+// import ImageWithText from '../Util/ImageWithText'
 // import LineDecoration from './Decorations/LineDecoration'
 import { Link } from 'react-router-dom'
 
@@ -36,7 +36,7 @@ function App() {
         </div>
       </div>
 
-      <div className='one-half' id='skills'>
+      {/* <div className='one-half' id='skills'>
         <ImageWithText src="/images/svg/python-logo-only.svg" alt='C' backgroundColor='#27282d' title='C'>
           Understands most C programming, syntaxes, and data structures, for example Tree, Trie, Linked List, and more.
         </ImageWithText>
@@ -64,7 +64,7 @@ function App() {
         <ImageWithText src="/images/svg/python-logo-only.svg" alt='Bootstrap' backgroundColor='#27282d' title='Bootstrap'>
           Understands what Bootstrap is, its usages, and some of its components and classes.
         </ImageWithText>
-      </div>
+      </div> */}
     </>
   )
 }
