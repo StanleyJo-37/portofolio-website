@@ -10,14 +10,15 @@ const Navbar: React.FC<NavbarTexts> = ({brand, choices}) =>
 {
     const choice_list = choices.map((choice) =>
         {
+            const csscls = 'no-underline hover:text-green hover: after:block after:bg-green hover:transition-ease-in-out hover:duration-300 after:mt-[.3rem] after:w-full after:h-[.1rem] after:border-green after:scale-x-0 hover:after:scale-x-100 hover:after:transition-ease-in-out hover:after:duration-300 hover:after:scale-x-100;'
             return (
                 <>
                     { choice.active ? (
-                        <Link className='no-underline text-green' to={choice.link} key={choice.label}>{choice.label}</Link>
+                        <Link className='no-underline text-green' to={ choice.link } key={ choice.label }>{ choice.label }</Link>
                     ) : choice.openInNewTab ? (
-                        <Link className='no-underline text-secondary' to={choice.link} key={choice.label} target="_blank" rel="noopener noreferrer">{choice.label}</Link>
+                        <Link className={ csscls + ' text-secondary' } to={ choice.link } key={ choice.label } target="_blank" rel="noopener noreferrer">{ choice.label }</Link>
                     ) : (
-                        <Link className='no-underline text-secondary' to={choice.link} key={choice.label}>{choice.label}</Link>
+                        <Link className={ csscls + ' text-secondary' } to={ choice.link } key={ choice.label }>{ choice.label }</Link>
                     )}
                 </>
             );
@@ -30,7 +31,7 @@ const Navbar: React.FC<NavbarTexts> = ({brand, choices}) =>
                 <div className='text-secondary'>
                     { brand }
                 </div>
-                <div className='space-x-6 text-xs'>
+                <div className='space-x-6 text-xs flex flex-row flex-nowrap'>
                     { choice_list }
                 </div>
             </nav>
