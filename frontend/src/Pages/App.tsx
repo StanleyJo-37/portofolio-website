@@ -1,4 +1,3 @@
-import './App.css'
 import './Page.css'
 import Navbar from '../Util/Navbar'
 import Button from '../Util/Button'
@@ -21,14 +20,12 @@ function App() {
             { label: 'CV', link: '/CV', active: false, openInNewTab: true, },
         ]}
       />
-      <div className='first-section' id='intro-content'>
-        <div id="left">
-          <img src='/images/png/main-photo.png' alt='My Photo' id='my-photo' />
-        </div>
-        <div id='right'>
-          <h1 className='intro-text' id='intro-title' >Hi, my name is Stanley</h1>
+      <div className='w-screen h-screen flex flex-row flex-nowrap'>
+        <img className='m-auto w-auto h-full' src='/images/png/main-photo.png' alt='My Photo' />
+        <div className='w-1/2 h-full flex flex-col justify-center'>
+          <h1 className='text-white text-4xl font-semibold' >Hi, my name is Stanley</h1>
           <br />
-            <p className='intro-text' id='brief-intro'>
+            <p className='w-3/4 text-secondary'>
               I'm a 19 year-old student who is eager to contribute through
               projects and learn new things about programming and computer
               in general with the tendency to give my best effort for the
